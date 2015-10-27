@@ -153,3 +153,9 @@ if __name__ == '__main__':
 #     # debug
 #     app.debug = True
 #     app.run(host='0.0.0.0')
+# cd /home/www
+# source venv/bin/activate
+# flask装在虚拟环境中的
+# cd /home/www
+# source venv/bin/activate
+# 这个是进入虚拟环境
