@@ -4,3 +4,4 @@
 # cd /home/www
 # source venv/bin/activate
 # 这个是进入虚拟环境
+ps -ef | grep -i py
