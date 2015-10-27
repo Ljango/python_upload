@@ -43,8 +43,9 @@ def upload():
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         # Redirect the user to the uploaded_file route, which
         # will basicaly show on the browser the uploaded file
-        return redirect(url_for('uploaded_file',
-                                filename=filename))
+        # return redirect(url_for('uploaded_file',
+        #                         filename=filename))
+        return 'SUCCESS'
 
 
 # This route is expecting a parameter containing the name
@@ -58,8 +59,10 @@ def uploaded_file(filename):
 
 if __name__ == '__main__':
     app.run(
+        #open network
         host="0.0.0.0",
         port=int("80"),
+        #debug mode
         debug=True
     )
 
