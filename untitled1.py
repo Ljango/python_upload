@@ -59,32 +59,12 @@ def uploaded_file(filename):
 
 if __name__ == '__main__':
     app.run(
-        #open network
+        # open network
         host="0.0.0.0",
         port=int("80"),
-        #debug mode
+        # debug mode
         debug=True
     )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # import os
@@ -143,19 +123,7 @@ if __name__ == '__main__':
 # def upload_file():
 #     if request.method == 'GET':
 #         return 'Not GET'
-#     file = request.files['file']
+#     file = reqest.files['file']
 #     filename = file.filename
 #     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 #     return 'upload success'
-#
-#
-# if __name__ == '__main__':
-#     # debug
-#     app.debug = True
-#     app.run(host='0.0.0.0')
-# cd /home/www
-# source venv/bin/activate
-# flask装在虚拟环境中的
-# cd /home/www
-# source venv/bin/activate
-# 这个是进入虚拟环境
